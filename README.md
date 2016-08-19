@@ -8,7 +8,7 @@ This Device is available from ControlEverything.com [SKU: TMD26721_I2CS]
 
 https://www.controleverything.com/content/Proximity?sku=TMD26721_I2CS
 
-This Sample code can be used with Raspberry pi, Arduino and Beaglebone Black.
+This Sample code can be used with Raspberry Pi, Arduino, Beaglebone Black and Onion Omega.
 
 ## Java
 Download and install pi4j library on Raspberry pi. Steps to install pi4j are provided at:
@@ -58,6 +58,26 @@ $>gcc TMD26721.c -o TMD26721
 Run the c program.
 ```cpp
 $>./TMD26721
+```
+
+## Onion Omega
+
+Get Started and setting up the Onion Omega according to steps provided at :
+
+https://wiki.onion.io/Get-Started
+
+To install the Python module, run the following commands:
+```cpp
+opkg update
+```
+```cpp
+opkg install python-light pyOnionI2C
+```
+
+Download (or git pull) the code in Onion Omega. Run the program.
+
+```cpp
+$> python TMD26721.py
 ```
 
 #####The code output is the raw value of proximity.
